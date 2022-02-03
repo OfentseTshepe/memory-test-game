@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import GameBoard from "./Components/GameBoard/GameBoard";
+import Navbar from "./Components/Navbar/Navbar";
+import ScoreBoard from "./Components/ScoreBoard/ScoreBoard";
+import StartButton from "./Components/StartButton/StartButton";
+import ModalMessage from "./Components/ModalMessage/ModalMessage";
+import {DataProvider} from "./GameContext";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DataProvider>
+        <Navbar />
+        <ScoreBoard />
+        <GameBoard />
+        <StartButton/>
+        <ModalMessage/>
+      </DataProvider>
+
     </div>
   );
 }
