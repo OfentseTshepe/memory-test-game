@@ -31,6 +31,7 @@ export const DataProvider = ({ children }) => {
 
   const slecetiontTimeInterval = useRef(null)
   const disableGameButtons = useRef(false)
+  
 
   const [resetUpdate, setResetUpdate] = useState(false)
   const [open, setOpen] = useState(false);
@@ -49,7 +50,10 @@ export const DataProvider = ({ children }) => {
   }
 
 
-  useEffect(() => { if (previewSeconds === 0) stopCounter() }, [previewSeconds])
+  useEffect(() => {
+
+    
+    if (previewSeconds === 0) stopCounter() }, [previewSeconds])
 
   useEffect(() => {
     if (selectionSeconds === 0) {
@@ -136,7 +140,7 @@ export const DataProvider = ({ children }) => {
 
   }, [gameLevel, resetUpdate]);
   return (
-    <DataContext.Provider value={{disableGameButtons, health, Message, Achivement, open, CloseModal, gameStarted, setHealth, ReduceHealth, gameLevel, UpgradeLevel, ResetGame, previewSeconds, StartStage, buttonStates, RevealHiddenColors, gameMap, showPreviewCounter, selectionSeconds }}>
+    <DataContext.Provider value={{disableGameButtons,gameOver, Clicked,health, Message, Achivement, open, CloseModal, gameStarted, setHealth, ReduceHealth, gameLevel, UpgradeLevel, ResetGame, previewSeconds, StartStage, buttonStates, RevealHiddenColors, gameMap, showPreviewCounter, selectionSeconds }}>
       {children}
     </DataContext.Provider>
   )

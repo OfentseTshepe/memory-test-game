@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Typography, Button, Tooltip } from "@mui/material"
 import BrainIcon from "../Asssets/BrainIcon";
-
-import SettingsIcon from '@mui/icons-material/Settings';
 import { LinkedIn, GitHub } from "@mui/icons-material";
 
 function Navbar() {
@@ -22,7 +20,7 @@ function Navbar() {
         </Button>
       </Tooltip>
       <Tooltip title="Github repo">
-        <Button variant="outlined"  sx={{ ml: "10px", borderRadius: "5%", borderStyle: "solid" ,}}>
+        <Button onClick={()=>{ window.open("https://github.com/OfentseTshepe/React-Memory-Testing-Game", "_blank")}}  variant="outlined"  sx={{ ml: "10px", borderRadius: "5%", borderStyle: "solid" ,}}>
           <GitHub sx={{ fontSize: 40 ,color:"rgb(23, 105, 170)"}} />
         </Button>
       </Tooltip>
