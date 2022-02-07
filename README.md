@@ -19,6 +19,6 @@ players are given three chances, if they choose the incorrect placement for more
 good luck!!!
 
 
-### Requirements for local debugging
+## Requirements for local debugging
 
 This game was developed using React js, so a react js environment
