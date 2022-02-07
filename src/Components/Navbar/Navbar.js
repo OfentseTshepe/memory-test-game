@@ -20,7 +20,7 @@ function Navbar() {
         </Button>
       </Tooltip>
       <Tooltip title="Github repo">
-        <Button onClick={()=>{ window.open("https://github.com/OfentseTshepe/React-Memory-Testing-Game", "_blank")}}  variant="outlined"  sx={{ ml: "10px", borderRadius: "5%", borderStyle: "solid" ,}}>
+        <Button onClick={()=>{ window.open("https://github.com/OfentseTshepe/memory-test-game", "_blank")}}  variant="outlined"  sx={{ ml: "10px", borderRadius: "5%", borderStyle: "solid" ,}}>
           <GitHub sx={{ fontSize: 40 ,color:"rgb(23, 105, 170)"}} />
         </Button>
       </Tooltip>
