@@ -31,6 +31,17 @@ export const DataProvider = ({ children }) => {
 
   const slecetiontTimeInterval = useRef(null)
   const disableGameButtons = useRef(false)
+
+  const [showInstructions,setShowIstructions] = useState(false)
+
+  const HideInstructions =() =>{
+    setShowIstructions(false)
+  }
+
+  const DisplayInstructions = () => {
+
+    setShowIstructions(true)
+  }
   
 
   const [resetUpdate, setResetUpdate] = useState(false)
@@ -140,7 +151,7 @@ export const DataProvider = ({ children }) => {
 
   }, [gameLevel, resetUpdate]);
   return (
-    <DataContext.Provider value={{disableGameButtons,gameOver, Clicked,health, Message, Achivement, open, CloseModal, gameStarted, setHealth, ReduceHealth, gameLevel, UpgradeLevel, ResetGame, previewSeconds, StartStage, buttonStates, RevealHiddenColors, gameMap, showPreviewCounter, selectionSeconds }}>
+    <DataContext.Provider value={{HideInstructions,showInstructions,DisplayInstructions,disableGameButtons,gameOver, Clicked,health, Message, Achivement, open, CloseModal, gameStarted, setHealth, ReduceHealth, gameLevel, UpgradeLevel, ResetGame, previewSeconds, StartStage, buttonStates, RevealHiddenColors, gameMap, showPreviewCounter, selectionSeconds }}>
       {children}
     </DataContext.Provider>
   )

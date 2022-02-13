@@ -18,7 +18,7 @@ const StyledModal = styled(ModalUnstyled)`
 `;
 
 const Backdrop = styled('div')`
-  z-index: -1;
+  z-index: -2;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -45,7 +45,7 @@ function ModalMessage() {
             >
                 <Box sx={{
                     width: 400,
-                    bgcolor: 'red',
+                    bgcolor: 'lightblue',
                     border: '2px solid #000',
                     p: 2,
                     px: 4,
@@ -53,7 +53,7 @@ function ModalMessage() {
                     borderRadius: "15px"
                 }}>
                     <h2 id="unstyled-modal-title">Game over {Message} </h2>
-                    <p id="unstyled-modal-description">The Lost at level  { Achivement.current}</p>
+                    <p id="unstyled-modal-description">You Lost at level  { Achivement.current}</p>
                     <Button  size ={"Large"}  onClick={CloseModal} sx={{backgroundColor:"darkblue"}}>Click Here Play Again</Button>
                 </Box>
             </StyledModal>

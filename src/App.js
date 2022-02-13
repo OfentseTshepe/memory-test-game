@@ -5,6 +5,7 @@ import ScoreBoard from "./Components/ScoreBoard/ScoreBoard";
 import StartButton from "./Components/StartButton/StartButton";
 import ModalMessage from "./Components/ModalMessage/ModalMessage";
 import {DataProvider} from "./GameContext";
+import InstructionsModal from "./Components/ModalMessage/Instructions";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <GameBoard />
         <StartButton/>
         <ModalMessage/>
+        <InstructionsModal/>
       </DataProvider>
 
     </div>
