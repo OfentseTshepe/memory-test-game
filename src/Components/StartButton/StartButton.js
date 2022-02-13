@@ -10,8 +10,8 @@ function StartButton() {
 
       <Slide direction="right" in={!gameStarted} mountOnEnter unmountOnExit>
         <div>
-          <Button onClick={StartStage} sx={{ backgroundColor: "orangered", borderRadius: "15px", border: "thin solid", width: "150px" }} >
-           <h4> start stage</h4>
+          <Button onClick={StartStage} sx={{ backgroundColor: "orangered" ,borderRadius: "15px", border: "thin solid", width: "150px" }} >
+           <h3> START STAGE</h3>
           </Button>
         </div>
       </Slide>
