@@ -1,10 +1,10 @@
 # Memmory Testing Game
 
-This  game is currently live and hosted on verce , play it  here https://memory-test-game.vercel.app/.
+This  game is currently live and hosted on vercel , play it  here https://memory-test-game.vercel.app/.
 
 ## How to play the game 
 
-The aim of the game is to remember as many orange box placements as possible in each level of the game .\
+The aim of the game is to remember as many orange box placements as possible in each level of the game 
 
 You have to press the start button  to start playing each stage of the game
 
