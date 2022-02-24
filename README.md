@@ -21,4 +21,5 @@ good luck!!!
 
 ## Requirements for local debugging
 
-This game was developed using React js, so a react js environment
+This game was developed using React js, so a react js environment is required 
+
